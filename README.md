@@ -5,3 +5,6 @@ En esta ocacion realice una pracitca para poner a prueba el aprendizaje que he e
 
 
 ![imagen](https://user-images.githubusercontent.com/117759232/209875448-26efcafb-7d7b-4413-9260-454388a67824.png)
+
+
+![imagen](https://user-images.githubusercontent.com/117759232/209875631-1d63c133-b8ac-43b7-8566-7f623b9605bc.png)
