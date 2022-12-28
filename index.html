@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@100;300;400;700;900&family=Play&family=Poppins:wght@300&family=Rubik+Bubbles&display=swap'); </style>    <title>Encriptador Alura</title>
+</head>
+<body>
+    <!--Cuadro principal-->
+    <div class="contenedor">
+        <div class="logo">
+            <img id="img-logo" src="MEDIA/logo.png" alt="Logo Alura">
+            <h1 class="titulo-principal">Encriptador de mensajes "Alura".</h1>
+        </div>   
+        <div class="izquierda">
+            <form>
+                <label id="titulo-secundario" for="mensaje">Escribe el mensaje que deseas encriptar:</label>
+                <textarea cols="30" rows="10" type="text" class="text-input" id="inputTexto" name="name" placeholder="Solo letras sin acentos ni cracteres especiales:"></textarea>
+            </form> 
+  <!--Botonera Principal-->   
+            <div class="boton-izquierdo">
+                <button type="button"  id="btn-encriptar" onclick="encriptar()">ENCRIPTAR</button>
+                <button type="button"  id="btn-desencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+            </div>
+    
+    <!--Cuadro de resultados lado derecho -->
+
+              <div class="derecha">
+                <img id="imagen-derecha" src="MEDIA/muneco.png" alt="Ilustracion diamante">
+                <p id="texto-1">Ningun mensaje fue encontrado.</p>
+                <textarea name="resultado" id="texto-2" cols="35" rows="10" readonly>Primero tienes que ingresar el mensaje que desees encriptar o desencriptar.</textarea>
+                <button type="button" id="btn-copiar" onclick="copiar()">COPIAR</button>
+              </div>
+        </div>
+    </div>
+   
+    <footer>
+        <p class="copyright">&copy Copyright ALura LATAM x Oracle ONE by: Carlos Munoz 2022</p>
+    </footer>     
+</body>
+</html>
