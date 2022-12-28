@@ -1,0 +1,267 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #D8DFE8;
+}
+
+.contenedor{
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    
+}
+
+#img-logo{
+    margin-top: 10px;
+    margin-left: 40px;
+    float: left;
+}
+
+.izquierda{
+    display: block;
+    position: static;
+    width: 646px;
+    height: 521px;
+    padding: 10px;
+}
+
+.titulo-principal{
+    padding: 20px;
+    text-align: center;
+    float: inherit;
+    font-size: 30px;
+    text-align: center;
+    font-family: lato;
+    animation: glitch 4s infinite;
+}
+
+@keyframes glitch {
+    0%{
+        text-shadow: #b4cf06
+        0px 0px, 
+        #0d22da 0px 0px;
+    }
+    50%{
+        text-shadow: #ff0000
+        -8px 0px, 
+            #60ffff 8px 0px;
+    }
+    
+    100%{
+        text-shadow: #b4cf06
+        0px 0px, 
+            #0d22da 0px 0px;
+    }    
+}  
+
+#titulo-secundario{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  position: absolute;
+  top: 130px;
+  left: 200px;
+}
+
+.boton-izquierdo{
+    position: absolute;
+    left: 310px;
+    top: 555px;
+}
+
+#imagen-derecha{
+    width: 275px;
+    float: right;
+    height: 264px;
+    padding: 1px;
+    margin-top: 23px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+.derecha{
+    padding: 1px;
+    position: absolute;
+    top: 122px;
+    left: 851px;
+    width: 288px;
+    height: 538px;
+    background: white;
+    border-radius: 9px;
+    border: 3px solid rgb(0, 0, 0);
+    animation: border-color 15s infinite; 
+}
+
+@keyframes border-color {
+    20% {
+      border-color: rgb(255, 0, 0); 
+    }
+    40% {
+      border-color: rgb(0, 0, 255); 
+    }
+    60% {
+        border-color: rgb(12, 245, 32); 
+      }
+      80% {
+        border-color: rgb(230, 247, 3); 
+      }
+      100% {
+        border-color: rgb(255, 0, 200); 
+      }
+  }
+
+  
+
+.text-input{
+    width: 580px;
+    height: 275px;
+    margin-top: 90px;
+    padding: 20px;
+    margin-left: 12px;
+    text-transform: lowercase;
+    resize: none;
+    border: none;
+    border-radius: 9px;
+    border-style: none;
+    background: white;
+}
+
+#texto-1{
+    text-align: center;
+    font-size: 24px;
+}
+
+#texto-2{
+  text-align: center;
+  width: auto;
+  height: auto;
+  resize: none;
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+#btn-encriptar{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    margin-left: 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    z-index: 0;
+    background: #D8DFE8;
+    overflow: hidden;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+  }
+  #btn-encriptar:hover {
+    color: #fff;
+  }
+  #btn-encriptar:hover:after {
+    height: 100%;
+  }
+  #btn-encriptar:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #0A3871
+  }
+
+
+  #btn-desencriptar{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    margin-left: 110px;
+    font-size: 12px;
+    border-radius: 5px;
+    z-index: 0;
+    background: #D8DFE8;
+    overflow: hidden;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+  }
+  #btn-desencriptar:hover {
+    color: #fff;
+  }
+  #btn-desencriptar:hover:after {
+    height: 100%;
+  }
+  #btn-desencriptar:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #0A3871;
+  }
+
+
+#btn-copiar{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 490px;
+    left: 80px;
+    font-size: 12px;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+  }
+  #btn-copiar:hover {
+    color: #fff;
+  }
+  #btn-copiar:hover:after {
+    height: 100%;
+  }
+  #btn-copiar:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #0A3871;
+}
+footer{
+    text-align: center;
+    padding:40px;
+    font-family: 'Bree Serif', serif;
+    font-size: 14px;
+}
+  
